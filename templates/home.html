@@ -1,0 +1,8 @@
+<h1>Message board homepage</h1>
+<ul>
+    <!--ListView automatically returns to us a context variable <model>_list that we can loop over via the built-in for template tag-->
+    {% for post in post_list %}
+    <!--create variable post and access the desired field text -->
+    <li>{{ post.text }}</li>
+    {% endfor %}
+</ul>
